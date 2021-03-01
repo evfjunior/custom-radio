@@ -62,4 +62,68 @@ form .input-group {
   height: 100vh;
   width: 100%;
 }
+
+input[type="radio"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  margin: 0 16px;
+  outline: none;
+}
+
+input[type="radio"] + label {
+  color: #6f6f6f;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+input[type="radio"] + label:hover {
+  color: #aeaeae;
+}
+
+input[type="radio"]:focus {
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 2px 1px #60b;
+          box-shadow: 0 0 2px 1px #60b;
+  margin: 0 15px;
+  padding: 0 1px;
+}
+
+input[type="radio"]:hover::before {
+  color: #aeaeae;
+}
+
+input[type="radio"]:checked:hover::before {
+  color: #60b;
+}
+
+input[type="radio"]:checked::before {
+  content: "\f192";
+  color: #60b;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+input[type="radio"]:checked + label {
+  color: #60b;
+}
+
+.icon {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon::before {
+  content: "\f111";
+  color: #6f6f6f;
+  font-size: 2rem;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
 /*# sourceMappingURL=main.css.map */

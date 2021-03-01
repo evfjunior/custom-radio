@@ -1,0 +1,59 @@
+input[type="radio"] {
+  appearance: none;
+  cursor: pointer;
+  margin: 0 16px;
+  outline: none;
+
+  + label {
+    color: $text-unchecked;
+    @include transition;
+
+    &:hover {
+      color: $text-hovered;
+    }
+  }
+
+  &:focus {
+    border-radius: 50%;
+    box-shadow: 0 0 2px 1px $primary;
+    margin: 0 15px; // Keeps the label at the same place
+    padding: 0 1px;
+  }
+
+  &:hover::before {
+    color: $text-hovered;
+  }
+
+  &:checked:hover::before {
+    color: $primary;
+  }
+
+  &:checked::before {
+    content: "\f192";
+    color: $primary;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+
+  &:checked + label {
+    color: $primary;
+  }
+}
+
+.icon {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+
+  &::before {
+    content: "\f111";
+    color: $text-unchecked;
+    font-size: 2rem;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+
+    @include transition;
+  }
+}
