@@ -1,0 +1,16 @@
+// Color Scheme
+$black: #111;
+$purple: #60b;
+$white: #eee;
+
+$primary: $purple;
+$bg-color: $black;
+$form-bg: lighten($bg-color, 5%);
+
+$text-color: $white;
+$text-checked: $primary;
+$text-hovered: darken($white, 25%);
+$text-unchecked: darken($white, 50%);
+
+// Typography
+$font-family-sans: "Reem Kufi", sans-serif;
