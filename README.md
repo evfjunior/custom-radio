@@ -4,6 +4,14 @@
 
 This is a simple project, showing how to customize HTML radio inputs for better looking forms.
 
+<hr>
+
+## Preview
+
+<img src="images/preview.gif" alt="Preview" />
+
+<hr>
+
 ## Features
 
 - HTML5
@@ -13,6 +21,8 @@ This is a simple project, showing how to customize HTML radio inputs for better 
 - Responsive Design
 - Highly customizable
 - Clean code
+
+<hr>
 
 ## Copyright
 
